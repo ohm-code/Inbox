@@ -10,7 +10,7 @@ contract Inbox {
     function setMessage(string newMessage) public{
         message = newMessage;
     }
-    function getMessage() public view returns(string) {
+    function getMessage() public view returns(string) { /// public variables already have a function created by contract that returns variable. This is redundant 
         return message;
     }
 
